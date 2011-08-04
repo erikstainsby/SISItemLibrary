@@ -8,7 +8,17 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SISLibrary : NSDocument {
+@interface SISLibrary : NSDocument <NSTableViewDataSource> {
+@private
+    NSMutableArray * myModel;
 }
+
+@property (readwrite, retain) NSMutableArray IBOutlet * myModel;
+
+-(void) populateMyModelArray;
+
+#pragma mark NSTableViewDataSource protocol conformance
+-(NSInteger) numberOfRowsInTableView:(NSTableView *)tableView;
+-(id) tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row;
 
 @end

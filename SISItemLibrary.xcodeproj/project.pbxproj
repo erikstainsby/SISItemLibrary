@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		039ED10F13E7AFA3007D4827 /* SISItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 039ED10E13E7AFA3007D4827 /* SISItem.m */; };
+		039ED11313E7B8BD007D4827 /* SISItemConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 039ED11213E7B8BD007D4827 /* SISItemConstants.m */; };
 		03A20AAC13E6699C00D616FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A20AAB13E6699C00D616FF /* Cocoa.framework */; };
 		03A20AB613E6699C00D616FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03A20AB413E6699C00D616FF /* InfoPlist.strings */; };
 		03A20AB813E6699C00D616FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A20AB713E6699C00D616FF /* main.m */; };
 		03A20ABC13E6699C00D616FF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 03A20ABA13E6699C00D616FF /* Credits.rtf */; };
 		03A20ABF13E6699C00D616FF /* SISLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A20ABE13E6699C00D616FF /* SISLibrary.m */; };
-		03A20AC213E6699C00D616FF /* SISLibrary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A20AC013E6699C00D616FF /* SISLibrary.xib */; };
+		03A20AC213E6699C00D616FF /* SISLibraryWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A20AC013E6699C00D616FF /* SISLibraryWindow.xib */; };
 		03A20AC513E6699D00D616FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A20AC313E6699D00D616FF /* MainMenu.xib */; };
 		03A20ACD13E6699D00D616FF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A20ACC13E6699D00D616FF /* SenTestingKit.framework */; };
 		03A20ACE13E6699D00D616FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A20AAB13E6699C00D616FF /* Cocoa.framework */; };
 		03A20AD613E6699D00D616FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03A20AD413E6699D00D616FF /* InfoPlist.strings */; };
 		03A20AD813E6699D00D616FF /* SISItemLibraryTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 03A20AD713E6699D00D616FF /* SISItemLibraryTests.h */; };
 		03A20ADA13E6699D00D616FF /* SISItemLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A20AD913E6699D00D616FF /* SISItemLibraryTests.m */; };
+		03A20AE513E66AA800D616FF /* SISLibraryWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A20AE413E66AA800D616FF /* SISLibraryWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,26 +35,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		039ED10D13E7AFA3007D4827 /* SISItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SISItem.h; sourceTree = "<group>"; };
+		039ED10E13E7AFA3007D4827 /* SISItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SISItem.m; sourceTree = "<group>"; };
+		039ED11113E7B86E007D4827 /* SISItemConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SISItemConstants.h; sourceTree = "<group>"; };
+		039ED11213E7B8BD007D4827 /* SISItemConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SISItemConstants.m; sourceTree = "<group>"; };
 		03A20AA713E6699C00D616FF /* SISItemLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SISItemLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A20AAB13E6699C00D616FF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		03A20AAE13E6699C00D616FF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		03A20AAF13E6699C00D616FF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		03A20AB013E6699C00D616FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		03A20AB313E6699C00D616FF /* SISItemLibrary-Info.plist */ = {isa = PBXFileReference; path = "SISItemLibrary-Info.plist"; sourceTree = "<group>"; };
+		03A20AB313E6699C00D616FF /* SISItemLibrary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SISItemLibrary-Info.plist"; sourceTree = "<group>"; };
 		03A20AB513E6699C00D616FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		03A20AB713E6699C00D616FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		03A20AB913E6699C00D616FF /* SISItemLibrary-Prefix.pch */ = {isa = PBXFileReference; path = "SISItemLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		03A20AB913E6699C00D616FF /* SISItemLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SISItemLibrary-Prefix.pch"; sourceTree = "<group>"; };
 		03A20ABB13E6699C00D616FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		03A20ABD13E6699C00D616FF /* SISLibrary.h */ = {isa = PBXFileReference; path = SISLibrary.h; sourceTree = "<group>"; };
+		03A20ABD13E6699C00D616FF /* SISLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SISLibrary.h; sourceTree = "<group>"; };
 		03A20ABE13E6699C00D616FF /* SISLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SISLibrary.m; sourceTree = "<group>"; };
-		03A20AC113E6699C00D616FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SISLibrary.xib; sourceTree = "<group>"; };
+		03A20AC113E6699C00D616FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SISLibraryWindow.xib; sourceTree = "<group>"; };
 		03A20AC413E6699D00D616FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		03A20ACB13E6699D00D616FF /* SISItemLibraryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SISItemLibraryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A20ACC13E6699D00D616FF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		03A20AD313E6699D00D616FF /* SISItemLibraryTests-Info.plist */ = {isa = PBXFileReference; path = "SISItemLibraryTests-Info.plist"; sourceTree = "<group>"; };
+		03A20AD313E6699D00D616FF /* SISItemLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SISItemLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		03A20AD513E6699D00D616FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		03A20AD713E6699D00D616FF /* SISItemLibraryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SISItemLibraryTests.h; sourceTree = "<group>"; };
 		03A20AD913E6699D00D616FF /* SISItemLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SISItemLibraryTests.m; sourceTree = "<group>"; };
+		03A20AE313E66AA800D616FF /* SISLibraryWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SISLibraryWindowController.h; sourceTree = "<group>"; };
+		03A20AE413E66AA800D616FF /* SISLibraryWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SISLibraryWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +128,14 @@
 			children = (
 				03A20ABD13E6699C00D616FF /* SISLibrary.h */,
 				03A20ABE13E6699C00D616FF /* SISLibrary.m */,
-				03A20AC013E6699C00D616FF /* SISLibrary.xib */,
+				039ED10D13E7AFA3007D4827 /* SISItem.h */,
+				039ED10E13E7AFA3007D4827 /* SISItem.m */,
+				03A20AC013E6699C00D616FF /* SISLibraryWindow.xib */,
+				03A20AE313E66AA800D616FF /* SISLibraryWindowController.h */,
+				03A20AE413E66AA800D616FF /* SISLibraryWindowController.m */,
 				03A20AC313E6699D00D616FF /* MainMenu.xib */,
+				039ED11113E7B86E007D4827 /* SISItemConstants.h */,
+				039ED11213E7B8BD007D4827 /* SISItemConstants.m */,
 				03A20AB213E6699C00D616FF /* Supporting Files */,
 			);
 			path = SISItemLibrary;
@@ -229,7 +244,7 @@
 			files = (
 				03A20AB613E6699C00D616FF /* InfoPlist.strings in Resources */,
 				03A20ABC13E6699C00D616FF /* Credits.rtf in Resources */,
-				03A20AC213E6699C00D616FF /* SISLibrary.xib in Resources */,
+				03A20AC213E6699C00D616FF /* SISLibraryWindow.xib in Resources */,
 				03A20AC513E6699D00D616FF /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +283,9 @@
 			files = (
 				03A20AB813E6699C00D616FF /* main.m in Sources */,
 				03A20ABF13E6699C00D616FF /* SISLibrary.m in Sources */,
+				03A20AE513E66AA800D616FF /* SISLibraryWindowController.m in Sources */,
+				039ED10F13E7AFA3007D4827 /* SISItem.m in Sources */,
+				039ED11313E7B8BD007D4827 /* SISItemConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,12 +324,12 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		03A20AC013E6699C00D616FF /* SISLibrary.xib */ = {
+		03A20AC013E6699C00D616FF /* SISLibraryWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				03A20AC113E6699C00D616FF /* en */,
 			);
-			name = SISLibrary.xib;
+			name = SISLibraryWindow.xib;
 			sourceTree = "<group>";
 		};
 		03A20AC313E6699D00D616FF /* MainMenu.xib */ = {
@@ -355,7 +373,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -374,17 +392,22 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
 		03A20ADE13E6699D00D616FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SISItemLibrary/SISItemLibrary-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "SISItemLibrary/SISItemLibrary-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,10 +415,15 @@
 		03A20ADF13E6699D00D616FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SISItemLibrary/SISItemLibrary-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "SISItemLibrary/SISItemLibrary-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -447,6 +475,7 @@
 				03A20ADF13E6699D00D616FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03A20AE013E6699D00D616FF /* Build configuration list for PBXNativeTarget "SISItemLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +484,7 @@
 				03A20AE213E6699D00D616FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
