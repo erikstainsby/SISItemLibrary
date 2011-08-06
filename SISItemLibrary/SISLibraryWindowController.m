@@ -7,59 +7,21 @@
 //
 
 #import "SISLibraryWindowController.h"
+#import "SISItem.h"
 
 @implementation SISLibraryWindowController
 
-
-@synthesize indent;
+@synthesize content;
 
 - (id)initWithWindow:(NSWindow *)window
 {
     if(nil != (self = [super initWithWindow:window])) 
     {
-        self.indent = 0;
         // Initialization code here.
         NSLog( @"%@ [%04d] init complete",[self class], __LINE__ );
     }
     
     return self;
-}
-
--(void) increment
-{
-    self.indent += 1;
-}
-
--(void) decrement
-{
-    self.indent -= 1; 
-}
-
-
-- (void) listSubviewClasses: thisview
-{
-    
-    NSArray * subs = [thisview subviews];
-    if( -1 == subs.count)
-        return;
-    
-    NSString * myIndent = @"";
-    for( NSInteger *i = 0; i <= self.indent; i++)
-    {
-        myIndent = [myIndent stringByAppendingString:@"\t"];
-    }
-    
-    NSLog(@"%@ [%04d] %@subview class: %@",[self class], __LINE__, myIndent, [thisview class] );
-    
-    NSLog(@"-->");
-    [self increment];
-    
-    for(NSView *v in subs)
-    {
-        [self listSubviewClasses: v];
-    }
-    [self decrement];
-    NSLog(@"<--");
 }
 
 - (void)windowDidLoad
@@ -69,30 +31,78 @@
     // Implement this method to handle any initialization after 
     // your window controller's window has been loaded from its nib file.
     
-    NSArray *subs1 = [[[self window] contentView] subviews];
+    //[[self window] setTitle:@"Library as table view"];
     
+    NSArray *subs1 = [[[self window] contentView] subviews];
     NSScrollView * scv = [subs1 objectAtIndex:0];
     NSArray * subs2 = [scv subviews];
     NSClipView * clv = [subs2 objectAtIndex:0];
     NSArray * subs3 = [clv subviews];
     NSTableView * myTable = [subs3 objectAtIndex:0];
-    
-    /*
-    indent = 0;
-    
-    for(NSView *v in subs2)
-    {
-        [self listSubviewClasses: clipview];
-    }
-    */
 
-    [myTable setDataSource: [self document]];
+    [myTable setDataSource: self];
     
-    NSLog( @"%@ [%04d] table dataSource set",[self class], __LINE__ );
+    NSLog( @"%@ [%04d] table dataSource set to self",[self class], __LINE__ );
     
     [myTable reloadData];
+    NSLog( @"%@ [%04d] table data reloaded",[self class], __LINE__ );
     
     NSLog( @"%@ [%04d] windowDidLoad complete",[self class], __LINE__ );
 }
+
+#pragma mark NSTableViewDataSource protocol conformance
+-(NSInteger) numberOfRowsInTableView:(NSTableView *)tableView {
+    NSInteger count=0;
+    if (self.content)
+        count=[self.content count];
+    return count;
+}
+
+-(id) tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row 
+{
+    // most returns will be NSStrings, but NSImage is also possible here with the correct cell type to match
+    
+    id returnValue=nil;   
+    
+    NSString * columnIdentifer = [tableColumn identifier];
+    
+    SISItem * this = (SISItem *)[content objectAtIndex:row];
+    
+    // Compare each column identifier and set the return value to
+    // the field value appropriate for the column
+    
+    if ([columnIdentifer isEqualToString: kSISItemName]) {
+        returnValue = this.name;
+    }
+    if ([columnIdentifer isEqualToString: kSISItemCategory]) {
+        returnValue = this.category;
+    }
+    if ([columnIdentifer isEqualToString: kSISItemUsage]) {
+        returnValue = this.usage;
+    }
+    if ([columnIdentifer isEqualToString: kSISItemIcon]) {
+        returnValue = this.icon;
+    }
+    if ([columnIdentifer isEqualToString: kSISItemParent]) {
+        returnValue = @"none";
+        if( this != nil ) {
+            SISItem * p = (SISItem *) this.parent;
+            returnValue = p.name;
+            [p release];
+        }
+        
+    }
+    if ([columnIdentifer isEqualToString: kSISItemChildren]) {
+        returnValue = @"none";
+        if( this != nil ) {
+            NSArray * a = [[NSArray alloc] initWithArray: this.children];
+            returnValue = [NSString stringWithFormat:@"%i",[a count]];
+            [a release];
+        }
+    }
+    
+    return returnValue;
+}
+
 
 @end

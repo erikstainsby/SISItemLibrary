@@ -14,6 +14,8 @@
 @synthesize category;
 @synthesize usage;
 @synthesize icon;
+@synthesize parent;
+@synthesize children;
 
 - (id) init 
 {
@@ -33,6 +35,8 @@
         [self setCategory: [coder decodeObjectForKey:kSISItemCategory]];
         [self setUsage: [coder decodeObjectForKey:kSISItemUsage]];
         [self setIcon: [coder decodeObjectForKey:kSISItemIcon]];
+        [self setParent: [coder decodeObjectForKey: kSISItemParent]];
+        [self setChildren: [coder decodeObjectForKey: kSISItemChildren]];
     }  
     return self;
 }
@@ -43,6 +47,8 @@
     [coder encodeObject:[self category] forKey:kSISItemCategory];
     [coder encodeObject:[self usage] forKey:kSISItemUsage];
     [coder encodeObject:[self icon] forKey:kSISItemIcon];
+    [coder encodeObject:[self parent] forKey:kSISItemParent];
+    [coder encodeObject:[self children] forKey:kSISItemChildren];
 }
 
 @end

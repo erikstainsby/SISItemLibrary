@@ -17,8 +17,7 @@
 
 -(void) populateMyModelArray;
 
-#pragma mark NSTableViewDataSource protocol conformance
--(NSInteger) numberOfRowsInTableView:(NSTableView *)tableView;
--(id) tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row;
+
+
 
 @end

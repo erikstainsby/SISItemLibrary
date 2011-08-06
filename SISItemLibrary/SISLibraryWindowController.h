@@ -8,9 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SISLibraryWindowController : NSWindowController{
-    NSInteger * indent;
-}
+@interface SISLibraryWindowController : NSWindowController <NSTableViewDataSource>{
+@private
+    
+} 
 
-@property (readwrite,assign) NSInteger * indent;
+@property (readwrite,assign) IBOutlet NSMutableArray * content;  // reference to (not copy of) the Library's myModel array
+
+#pragma mark NSTableViewDataSource protocol conformance
+-(NSInteger) numberOfRowsInTableView:(NSTableView *)tableView;
+-(id) tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row;
+
 @end

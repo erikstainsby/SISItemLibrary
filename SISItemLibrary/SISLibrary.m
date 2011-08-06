@@ -8,6 +8,7 @@
 
 #import "SISLibrary.h"
 #import "SISLibraryWindowController.h"
+#import "SISOutlineWindowController.h"
 #import "SISItem.h"
 
 @implementation SISLibrary
@@ -59,6 +60,16 @@
     [i2 setIcon: @"body.png"];
     [i3 setIcon: @"p.png"];
     
+    [i0 setParent: nil];
+    [i1 setParent: i0];
+    [i2 setParent: i0];
+    [i3 setParent: i2];
+    
+    [i0 setChildren: [NSMutableArray arrayWithObjects:i1, i2,nil]];
+    [i1 setChildren: [NSMutableArray array]];
+    [i2 setChildren: [NSMutableArray arrayWithObjects:i3, nil]];
+    [i3 setChildren: [NSMutableArray array]];
+    
     
     //NSLog( @"%@ [%04d] my model element i0: %@",[self class], __LINE__, i0);
     
@@ -79,11 +90,23 @@
 
 
 - (void) makeWindowControllers {
-    SISLibraryWindowController * controller = [[SISLibraryWindowController alloc] initWithWindowNibName: @"SISLibraryWindow"];
-    [self addWindowController: controller];
-    [controller showWindow:self];
-    [controller release];
+    
+    NSLog( @"%@ [%04d] makeWindowControllers started",[self class], __LINE__ );
+    
+    SISLibraryWindowController * ctlr01 = [[SISLibraryWindowController alloc] initWithWindowNibName: @"SISLibraryWindow"];
+    
+    [self addWindowController: ctlr01];
+    [ctlr01 setContent: myModel];
+    [ctlr01 showWindow:self];
+    [ctlr01 release];
 
+    SISOutlineWindowController * ctlr02 = [[SISOutlineWindowController alloc] initWithWindowNibName: @"SISOutlineWindow"];
+    
+    [self addWindowController: ctlr02];
+    [ctlr02 setContent: myModel];
+    [ctlr02 showWindow:self];
+    [ctlr02 release];
+    
     NSLog( @"%@ [%04d] makeWindowControllers complete",[self class], __LINE__ );
 }
 
@@ -126,43 +149,6 @@
 + (BOOL)autosavesInPlace
 {
     return YES;
-}
-
-#pragma mark NSTableViewDataSource protocol conformance
--(NSInteger) numberOfRowsInTableView:(NSTableView *)tableView {
-    NSInteger count=0;
-    if (self.myModel)
-        count=[self.myModel count];
-    return count;
-}
-
--(id) tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row 
-{
-    // most returns will be NSStrings, but NSImage is also possible here with the correct cell type to match
-    
-    id returnValue=nil;   
-    
-    NSString * columnIdentifer = [tableColumn identifier];
-    
-    SISItem * this = [myModel objectAtIndex:row];
-    
-    // Compare each column identifier and set the return value to
-    // the field value appropriate for the column
-    
-    if ([columnIdentifer isEqualToString: kSISItemName]) {
-        returnValue = this.name;
-    }
-    if ([columnIdentifer isEqualToString:kSISItemCategory]) {
-        returnValue = this.category;
-    }
-    if ([columnIdentifer isEqualToString:kSISItemUsage]) {
-        returnValue = this.usage;
-    }
-    if ([columnIdentifer isEqualToString:kSISItemIcon]) {
-        returnValue = this.icon;
-    }
-
-    return returnValue;
 }
 
 

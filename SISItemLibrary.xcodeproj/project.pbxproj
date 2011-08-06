@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034CD76013EB70340016F365 /* SISOutlineWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034CD75F13EB70340016F365 /* SISOutlineWindowController.m */; };
+		034CD76313EB70500016F365 /* SISOutlineWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034CD76213EB70500016F365 /* SISOutlineWindow.xib */; };
 		039ED10F13E7AFA3007D4827 /* SISItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 039ED10E13E7AFA3007D4827 /* SISItem.m */; };
 		039ED11313E7B8BD007D4827 /* SISItemConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 039ED11213E7B8BD007D4827 /* SISItemConstants.m */; };
 		03A20AAC13E6699C00D616FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A20AAB13E6699C00D616FF /* Cocoa.framework */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		034CD75E13EB70340016F365 /* SISOutlineWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SISOutlineWindowController.h; sourceTree = "<group>"; };
+		034CD75F13EB70340016F365 /* SISOutlineWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SISOutlineWindowController.m; sourceTree = "<group>"; };
+		034CD76213EB70500016F365 /* SISOutlineWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SISOutlineWindow.xib; sourceTree = "<group>"; };
 		039ED10D13E7AFA3007D4827 /* SISItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SISItem.h; sourceTree = "<group>"; };
 		039ED10E13E7AFA3007D4827 /* SISItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SISItem.m; sourceTree = "<group>"; };
 		039ED11113E7B86E007D4827 /* SISItemConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SISItemConstants.h; sourceTree = "<group>"; };
@@ -133,6 +138,9 @@
 				03A20AC013E6699C00D616FF /* SISLibraryWindow.xib */,
 				03A20AE313E66AA800D616FF /* SISLibraryWindowController.h */,
 				03A20AE413E66AA800D616FF /* SISLibraryWindowController.m */,
+				034CD76213EB70500016F365 /* SISOutlineWindow.xib */,
+				034CD75E13EB70340016F365 /* SISOutlineWindowController.h */,
+				034CD75F13EB70340016F365 /* SISOutlineWindowController.m */,
 				03A20AC313E6699D00D616FF /* MainMenu.xib */,
 				039ED11113E7B86E007D4827 /* SISItemConstants.h */,
 				039ED11213E7B8BD007D4827 /* SISItemConstants.m */,
@@ -217,6 +225,7 @@
 		03A20A9E13E6699C00D616FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0410;
 				ORGANIZATIONNAME = "Roaring Sky Software";
 			};
 			buildConfigurationList = 03A20AA113E6699C00D616FF /* Build configuration list for PBXProject "SISItemLibrary" */;
@@ -246,6 +255,7 @@
 				03A20ABC13E6699C00D616FF /* Credits.rtf in Resources */,
 				03A20AC213E6699C00D616FF /* SISLibraryWindow.xib in Resources */,
 				03A20AC513E6699D00D616FF /* MainMenu.xib in Resources */,
+				034CD76313EB70500016F365 /* SISOutlineWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +296,7 @@
 				03A20AE513E66AA800D616FF /* SISLibraryWindowController.m in Sources */,
 				039ED10F13E7AFA3007D4827 /* SISItem.m in Sources */,
 				039ED11313E7B8BD007D4827 /* SISItemConstants.m in Sources */,
+				034CD76013EB70340016F365 /* SISOutlineWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +384,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -392,7 +403,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -436,6 +447,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SISItemLibrary/SISItemLibrary-Prefix.pch";
 				INFOPLIST_FILE = "SISItemLibraryTests/SISItemLibraryTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -450,6 +462,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SISItemLibrary/SISItemLibrary-Prefix.pch";
 				INFOPLIST_FILE = "SISItemLibraryTests/SISItemLibraryTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
