@@ -14,8 +14,10 @@
 @synthesize category;
 @synthesize usage;
 @synthesize icon;
+@synthesize image;
 @synthesize parent;
 @synthesize children;
+
 
 - (id) init 
 {
@@ -27,7 +29,7 @@
 }
 
 
-- (id)initWithCoder:(NSCoder *) coder
+- (id) initWithCoder:(NSCoder *) coder
 {
     if( nil != (self = [super init])) 
     {
@@ -35,6 +37,7 @@
         [self setCategory: [coder decodeObjectForKey:kSISItemCategory]];
         [self setUsage: [coder decodeObjectForKey:kSISItemUsage]];
         [self setIcon: [coder decodeObjectForKey:kSISItemIcon]];
+        [self setImage: [coder decodeObjectForKey:kSISItemImage]];
         [self setParent: [coder decodeObjectForKey: kSISItemParent]];
         [self setChildren: [coder decodeObjectForKey: kSISItemChildren]];
     }  
@@ -47,6 +50,7 @@
     [coder encodeObject:[self category] forKey:kSISItemCategory];
     [coder encodeObject:[self usage] forKey:kSISItemUsage];
     [coder encodeObject:[self icon] forKey:kSISItemIcon];
+    [coder encodeObject:[self image] forKey:kSISItemImage];
     [coder encodeObject:[self parent] forKey:kSISItemParent];
     [coder encodeObject:[self children] forKey:kSISItemChildren];
 }

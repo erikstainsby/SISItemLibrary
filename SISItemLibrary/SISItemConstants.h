@@ -13,6 +13,7 @@ extern NSString * const kSISItemName;
 extern NSString * const kSISItemCategory;
 extern NSString * const kSISItemUsage;
 extern NSString * const kSISItemIcon;
+extern NSString * const kSISItemImage;
 extern NSString * const kSISItemParent;
 extern NSString * const kSISItemChildren;
 

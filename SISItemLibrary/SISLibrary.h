@@ -16,7 +16,7 @@
 @property (readwrite, retain) NSMutableArray IBOutlet * myModel;
 
 -(void) populateMyModelArray;
-
+-(NSImage *) imageFromIconName: (id) sender;
 
 
 

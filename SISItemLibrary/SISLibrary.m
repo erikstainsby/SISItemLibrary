@@ -8,7 +8,7 @@
 
 #import "SISLibrary.h"
 #import "SISLibraryWindowController.h"
-#import "SISOutlineWindowController.h"
+#import "SISLibraryTVCellWindowController.h"
 #import "SISItem.h"
 
 @implementation SISLibrary
@@ -31,6 +31,20 @@
         NSLog( @"%@ [%04d] init complete",[self class], __LINE__ );
     }
     return self;
+}
+
+
+-(NSImage *) imageFromIconName: (id) sender
+{
+    SISItem * item = (SISItem *) sender;
+    NSString * iconName = [item icon];
+    NSString * path = [[NSBundle mainBundle] pathForImageResource:iconName];
+    
+    NSLog( @"%@ [%04d] icon name: %@ full path: %@", [self class], __LINE__, [sender icon], path);
+    
+    NSURL * imgURL = [[NSURL alloc] initFileURLWithPath: path];
+    NSImage * img = [[NSImage alloc] initWithContentsOfURL: imgURL];
+    return img;
 }
 
 -(void) populateMyModelArray
@@ -60,6 +74,11 @@
     [i2 setIcon: @"body.png"];
     [i3 setIcon: @"p.png"];
     
+    [i0 setImage: [self imageFromIconName: i0]];
+    [i1 setImage: [self imageFromIconName: i1]];
+    [i2 setImage: [self imageFromIconName: i2]];
+    [i3 setImage: [self imageFromIconName: i3]];
+    
     [i0 setParent: nil];
     [i1 setParent: i0];
     [i2 setParent: i0];
@@ -79,19 +98,19 @@
     [myModel addObject: i2];
     [myModel addObject: i3];
     
-    /*
+    
     [i0 release];
     [i1 release];
     [i2 release];
     [i3 release];
-    */
+    
     NSLog( @"%@ [%04d] populatemyModelArray complete",[self class], __LINE__);
 }
 
 
 - (void) makeWindowControllers {
     
-    NSLog( @"%@ [%04d] makeWindowControllers started",[self class], __LINE__ );
+    NSLog(@"%@ [%04d] makeWindowControllers started",[self class], __LINE__ );
     
     SISLibraryWindowController * ctlr01 = [[SISLibraryWindowController alloc] initWithWindowNibName: @"SISLibraryWindow"];
     
@@ -99,8 +118,8 @@
     [ctlr01 setContent: myModel];
     [ctlr01 showWindow:self];
     [ctlr01 release];
-
-    SISOutlineWindowController * ctlr02 = [[SISOutlineWindowController alloc] initWithWindowNibName: @"SISOutlineWindow"];
+    
+    SISLibraryTVCellWindowController * ctlr02 = [[SISLibraryTVCellWindowController alloc] initWithWindowNibName: @"SISLibraryTVCellWindow"];
     
     [self addWindowController: ctlr02];
     [ctlr02 setContent: myModel];

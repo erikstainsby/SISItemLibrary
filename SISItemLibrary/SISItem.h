@@ -15,6 +15,7 @@
     NSString * category;
     NSString * usage;
     NSString * icon;
+    NSImage * image;
     SISItem * parent;
     NSMutableArray * children;
 }
@@ -23,8 +24,10 @@
 @property (readwrite,retain) NSString * category;
 @property (readwrite,retain) NSString * usage;
 @property (readwrite,retain) NSString * icon;
-
+@property (readwrite,retain) NSImage * image;
 @property (readwrite,retain) SISItem * parent;
 @property (readwrite,retain) NSMutableArray * children;
+
+
 
 @end
