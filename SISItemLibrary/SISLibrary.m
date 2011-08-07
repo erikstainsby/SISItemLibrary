@@ -7,7 +7,7 @@
 //
 
 #import "SISLibrary.h"
-#import "SISLibraryWindowController.h"
+// #import "SISLibraryWindowController.h"
 #import "SISLibraryTVCellWindowController.h"
 #import "SISItem.h"
 
@@ -47,6 +47,13 @@
     return img;
 }
 
+-(void) populateMyModelArray
+{
+
+    
+}
+
+/*
 -(void) populateMyModelArray
 {
     SISItem * i0 = [[SISItem alloc] init];
@@ -106,18 +113,20 @@
     
     NSLog( @"%@ [%04d] populatemyModelArray complete",[self class], __LINE__);
 }
+*/
 
 
 - (void) makeWindowControllers {
     
     NSLog(@"%@ [%04d] makeWindowControllers started",[self class], __LINE__ );
     
+  /*  
     SISLibraryWindowController * ctlr01 = [[SISLibraryWindowController alloc] initWithWindowNibName: @"SISLibraryWindow"];
-    
     [self addWindowController: ctlr01];
     [ctlr01 setContent: myModel];
     [ctlr01 showWindow:self];
     [ctlr01 release];
+  */
     
     SISLibraryTVCellWindowController * ctlr02 = [[SISLibraryTVCellWindowController alloc] initWithWindowNibName: @"SISLibraryTVCellWindow"];
     
