@@ -37,6 +37,33 @@
 		03A1906013EE3188004D2235 /* section.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A1904613EE3188004D2235 /* section.png */; };
 		03A1906113EE3188004D2235 /* style.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A1904713EE3188004D2235 /* style.png */; };
 		03A1906213EE3188004D2235 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A1904813EE3188004D2235 /* title.png */; };
+		03A1906E13EEFEBC004D2235 /* SISLibraryItems-default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1906D13EEFEBC004D2235 /* SISLibraryItems-default.plist */; };
+		03A1907013EF2216004D2235 /* SISItem-title.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1906F13EF2216004D2235 /* SISItem-title.plist */; };
+		03A1908B13EF2629004D2235 /* SISItem-h1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907113EF2625004D2235 /* SISItem-h1.plist */; };
+		03A1908C13EF2629004D2235 /* SISItem-h2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907213EF2625004D2235 /* SISItem-h2.plist */; };
+		03A1908D13EF2629004D2235 /* SISItem-h3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907313EF2625004D2235 /* SISItem-h3.plist */; };
+		03A1908E13EF2629004D2235 /* SISItem-h4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907413EF2625004D2235 /* SISItem-h4.plist */; };
+		03A1908F13EF2629004D2235 /* SISItem-h5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907513EF2625004D2235 /* SISItem-h5.plist */; };
+		03A1909013EF2629004D2235 /* SISItem-h6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907613EF2625004D2235 /* SISItem-h6.plist */; };
+		03A1909113EF2629004D2235 /* SISItem-head.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907713EF2625004D2235 /* SISItem-head.plist */; };
+		03A1909213EF2629004D2235 /* SISItem-header.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907813EF2625004D2235 /* SISItem-header.plist */; };
+		03A1909313EF2629004D2235 /* SISItem-hgroup.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907913EF2626004D2235 /* SISItem-hgroup.plist */; };
+		03A1909413EF2629004D2235 /* SISItem-link.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907A13EF2626004D2235 /* SISItem-link.plist */; };
+		03A1909513EF2629004D2235 /* SISItem-meta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907B13EF2626004D2235 /* SISItem-meta.plist */; };
+		03A1909613EF2629004D2235 /* SISItem-navigation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907C13EF2626004D2235 /* SISItem-navigation.plist */; };
+		03A1909713EF2629004D2235 /* SISItem-noscript.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907D13EF2627004D2235 /* SISItem-noscript.plist */; };
+		03A1909813EF2629004D2235 /* SISItem-p.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907E13EF2627004D2235 /* SISItem-p.plist */; };
+		03A1909913EF2629004D2235 /* SISItem-page.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1907F13EF2627004D2235 /* SISItem-page.plist */; };
+		03A1909A13EF2629004D2235 /* SISItem-project.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1908013EF2627004D2235 /* SISItem-project.plist */; };
+		03A1909B13EF2629004D2235 /* SISItem-script.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1908113EF2627004D2235 /* SISItem-script.plist */; };
+		03A1909C13EF2629004D2235 /* SISItem-section.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1908213EF2627004D2235 /* SISItem-section.plist */; };
+		03A1909D13EF2629004D2235 /* SISItem-address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1908313EF2627004D2235 /* SISItem-address.plist */; };
+		03A1909E13EF2629004D2235 /* SISItem-article.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1908413EF2627004D2235 /* SISItem-article.plist */; };
+		03A1909F13EF2629004D2235 /* SISItem-aside.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1908513EF2627004D2235 /* SISItem-aside.plist */; };
+		03A190A013EF2629004D2235 /* SISItem-base.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1908613EF2627004D2235 /* SISItem-base.plist */; };
+		03A190A113EF2629004D2235 /* SISItem-body.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1908713EF2627004D2235 /* SISItem-body.plist */; };
+		03A190A213EF2629004D2235 /* SISItem-footer.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1908813EF2628004D2235 /* SISItem-footer.plist */; };
+		03A190A413EF2629004D2235 /* SISItem-style.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1908A13EF2629004D2235 /* SISItem-style.plist */; };
 		03A20AAC13E6699C00D616FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A20AAB13E6699C00D616FF /* Cocoa.framework */; };
 		03A20AB613E6699C00D616FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03A20AB413E6699C00D616FF /* InfoPlist.strings */; };
 		03A20AB813E6699C00D616FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A20AB713E6699C00D616FF /* main.m */; };
@@ -96,6 +123,33 @@
 		03A1904613EE3188004D2235 /* section.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = section.png; sourceTree = "<group>"; };
 		03A1904713EE3188004D2235 /* style.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = style.png; sourceTree = "<group>"; };
 		03A1904813EE3188004D2235 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		03A1906D13EEFEBC004D2235 /* SISLibraryItems-default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISLibraryItems-default.plist"; sourceTree = "<group>"; };
+		03A1906F13EF2216004D2235 /* SISItem-title.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-title.plist"; sourceTree = "<group>"; };
+		03A1907113EF2625004D2235 /* SISItem-h1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-h1.plist"; sourceTree = "<group>"; };
+		03A1907213EF2625004D2235 /* SISItem-h2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-h2.plist"; sourceTree = "<group>"; };
+		03A1907313EF2625004D2235 /* SISItem-h3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-h3.plist"; sourceTree = "<group>"; };
+		03A1907413EF2625004D2235 /* SISItem-h4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-h4.plist"; sourceTree = "<group>"; };
+		03A1907513EF2625004D2235 /* SISItem-h5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-h5.plist"; sourceTree = "<group>"; };
+		03A1907613EF2625004D2235 /* SISItem-h6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-h6.plist"; sourceTree = "<group>"; };
+		03A1907713EF2625004D2235 /* SISItem-head.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-head.plist"; sourceTree = "<group>"; };
+		03A1907813EF2625004D2235 /* SISItem-header.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-header.plist"; sourceTree = "<group>"; };
+		03A1907913EF2626004D2235 /* SISItem-hgroup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-hgroup.plist"; sourceTree = "<group>"; };
+		03A1907A13EF2626004D2235 /* SISItem-link.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-link.plist"; sourceTree = "<group>"; };
+		03A1907B13EF2626004D2235 /* SISItem-meta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-meta.plist"; sourceTree = "<group>"; };
+		03A1907C13EF2626004D2235 /* SISItem-navigation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-navigation.plist"; sourceTree = "<group>"; };
+		03A1907D13EF2627004D2235 /* SISItem-noscript.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-noscript.plist"; sourceTree = "<group>"; };
+		03A1907E13EF2627004D2235 /* SISItem-p.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-p.plist"; sourceTree = "<group>"; };
+		03A1907F13EF2627004D2235 /* SISItem-page.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-page.plist"; sourceTree = "<group>"; };
+		03A1908013EF2627004D2235 /* SISItem-project.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-project.plist"; sourceTree = "<group>"; };
+		03A1908113EF2627004D2235 /* SISItem-script.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-script.plist"; sourceTree = "<group>"; };
+		03A1908213EF2627004D2235 /* SISItem-section.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-section.plist"; sourceTree = "<group>"; };
+		03A1908313EF2627004D2235 /* SISItem-address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-address.plist"; sourceTree = "<group>"; };
+		03A1908413EF2627004D2235 /* SISItem-article.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-article.plist"; sourceTree = "<group>"; };
+		03A1908513EF2627004D2235 /* SISItem-aside.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-aside.plist"; sourceTree = "<group>"; };
+		03A1908613EF2627004D2235 /* SISItem-base.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-base.plist"; sourceTree = "<group>"; };
+		03A1908713EF2627004D2235 /* SISItem-body.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-body.plist"; sourceTree = "<group>"; };
+		03A1908813EF2628004D2235 /* SISItem-footer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-footer.plist"; sourceTree = "<group>"; };
+		03A1908A13EF2629004D2235 /* SISItem-style.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SISItem-style.plist"; sourceTree = "<group>"; };
 		03A20AA713E6699C00D616FF /* SISItemLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SISItemLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A20AAB13E6699C00D616FF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		03A20AAE13E6699C00D616FF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -204,6 +258,31 @@
 		03A20AB213E6699C00D616FF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03A1907113EF2625004D2235 /* SISItem-h1.plist */,
+				03A1907213EF2625004D2235 /* SISItem-h2.plist */,
+				03A1907313EF2625004D2235 /* SISItem-h3.plist */,
+				03A1907413EF2625004D2235 /* SISItem-h4.plist */,
+				03A1907513EF2625004D2235 /* SISItem-h5.plist */,
+				03A1907613EF2625004D2235 /* SISItem-h6.plist */,
+				03A1907713EF2625004D2235 /* SISItem-head.plist */,
+				03A1907813EF2625004D2235 /* SISItem-header.plist */,
+				03A1907913EF2626004D2235 /* SISItem-hgroup.plist */,
+				03A1907A13EF2626004D2235 /* SISItem-link.plist */,
+				03A1907B13EF2626004D2235 /* SISItem-meta.plist */,
+				03A1907C13EF2626004D2235 /* SISItem-navigation.plist */,
+				03A1907D13EF2627004D2235 /* SISItem-noscript.plist */,
+				03A1907E13EF2627004D2235 /* SISItem-p.plist */,
+				03A1907F13EF2627004D2235 /* SISItem-page.plist */,
+				03A1908013EF2627004D2235 /* SISItem-project.plist */,
+				03A1908113EF2627004D2235 /* SISItem-script.plist */,
+				03A1908213EF2627004D2235 /* SISItem-section.plist */,
+				03A1908313EF2627004D2235 /* SISItem-address.plist */,
+				03A1908413EF2627004D2235 /* SISItem-article.plist */,
+				03A1908513EF2627004D2235 /* SISItem-aside.plist */,
+				03A1908613EF2627004D2235 /* SISItem-base.plist */,
+				03A1908713EF2627004D2235 /* SISItem-body.plist */,
+				03A1908813EF2628004D2235 /* SISItem-footer.plist */,
+				03A1908A13EF2629004D2235 /* SISItem-style.plist */,
 				03A1902F13EE3188004D2235 /* address.png */,
 				03A1903013EE3188004D2235 /* article.png */,
 				03A1903113EE3188004D2235 /* aside.png */,
@@ -235,6 +314,8 @@
 				03A20AB713E6699C00D616FF /* main.m */,
 				03A20AB913E6699C00D616FF /* SISItemLibrary-Prefix.pch */,
 				03A20ABA13E6699C00D616FF /* Credits.rtf */,
+				03A1906D13EEFEBC004D2235 /* SISLibraryItems-default.plist */,
+				03A1906F13EF2216004D2235 /* SISItem-title.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -360,6 +441,33 @@
 				03A1906013EE3188004D2235 /* section.png in Resources */,
 				03A1906113EE3188004D2235 /* style.png in Resources */,
 				03A1906213EE3188004D2235 /* title.png in Resources */,
+				03A1906E13EEFEBC004D2235 /* SISLibraryItems-default.plist in Resources */,
+				03A1907013EF2216004D2235 /* SISItem-title.plist in Resources */,
+				03A1908B13EF2629004D2235 /* SISItem-h1.plist in Resources */,
+				03A1908C13EF2629004D2235 /* SISItem-h2.plist in Resources */,
+				03A1908D13EF2629004D2235 /* SISItem-h3.plist in Resources */,
+				03A1908E13EF2629004D2235 /* SISItem-h4.plist in Resources */,
+				03A1908F13EF2629004D2235 /* SISItem-h5.plist in Resources */,
+				03A1909013EF2629004D2235 /* SISItem-h6.plist in Resources */,
+				03A1909113EF2629004D2235 /* SISItem-head.plist in Resources */,
+				03A1909213EF2629004D2235 /* SISItem-header.plist in Resources */,
+				03A1909313EF2629004D2235 /* SISItem-hgroup.plist in Resources */,
+				03A1909413EF2629004D2235 /* SISItem-link.plist in Resources */,
+				03A1909513EF2629004D2235 /* SISItem-meta.plist in Resources */,
+				03A1909613EF2629004D2235 /* SISItem-navigation.plist in Resources */,
+				03A1909713EF2629004D2235 /* SISItem-noscript.plist in Resources */,
+				03A1909813EF2629004D2235 /* SISItem-p.plist in Resources */,
+				03A1909913EF2629004D2235 /* SISItem-page.plist in Resources */,
+				03A1909A13EF2629004D2235 /* SISItem-project.plist in Resources */,
+				03A1909B13EF2629004D2235 /* SISItem-script.plist in Resources */,
+				03A1909C13EF2629004D2235 /* SISItem-section.plist in Resources */,
+				03A1909D13EF2629004D2235 /* SISItem-address.plist in Resources */,
+				03A1909E13EF2629004D2235 /* SISItem-article.plist in Resources */,
+				03A1909F13EF2629004D2235 /* SISItem-aside.plist in Resources */,
+				03A190A013EF2629004D2235 /* SISItem-base.plist in Resources */,
+				03A190A113EF2629004D2235 /* SISItem-body.plist in Resources */,
+				03A190A213EF2629004D2235 /* SISItem-footer.plist in Resources */,
+				03A190A413EF2629004D2235 /* SISItem-style.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

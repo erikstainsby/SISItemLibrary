@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Project &amp; Pages</key>
+	<array>
+		<dict>
+			<key>Project</key>
+			<string>new project package</string>
+			<key>Page</key>
+			<string>new page container</string>
+			<key>Global</key>
+			<string>new navigation or include container</string>
+		</dict>
+	</array>
+	<key>Head</key>
+	<array>
+		<dict>
+			<key>Head</key>
+			<string>container section</string>
+			<key>Title</key>
+			<string>text container</string>
+			<key>Link</key>
+			<string>resource link</string>
+			<key>Style</key>
+			<string>resource link</string>
+			<key>Script import</key>
+			<string>resource link</string>
+			<key>Script inline</key>
+			<string>source code container</string>
+		</dict>
+	</array>
+	<key>Body &amp; Flow</key>
+	<array>
+		<dict>
+			<key>Body</key>
+			<string>container section</string>
+			<key>Article</key>
+			<string>container for article</string>
+			<key>Header</key>
+			<string>container for page heading content</string>
+			<key>Navigation</key>
+			<string>container for navigation elements</string>
+			<key>Section</key>
+			<string>container for generic content locks</string>
+			<key>Footer</key>
+			<string>container for page footer content </string>
+			<key>Aside</key>
+			<string>container for out-of-flow remarks</string>
+			<key>Div</key>
+			<string>generic container</string>
+			<key>Span</key>
+			<string>generic inline scope defining tag</string>
+			<key>Hgroup</key>
+			<string>scope for a set of related headings</string>
+			<key>H1</key>
+			<string>heading level 1</string>
+			<key>H2</key>
+			<string>heading level 2</string>
+			<key>H3</key>
+			<string>heading level 3</string>
+			<key>H4</key>
+			<string>heading level 4</string>
+			<key>H5</key>
+			<string>heading level 5</string>
+			<key>H6</key>
+			<string>heading level 6</string>
+			<key>Paragraph</key>
+			<string>paragraph block container</string>
+			<key>Blockquote</key>
+			<string>block quote container</string>
+			<key>Strong</key>
+			<string>bold or strongly emphasized inline text</string>
+			<key>Emphasis</key>
+			<string>italicized or emphasized inline text</string>
+		</dict>
+	</array>
+	<key>Styles &amp; Script</key>
+	<array>
+		<dict>
+			<key>CSS3</key>
+			<string>cascading stylesheet page</string>
+			<key>Script</key>
+			<string>externalized ECMAscript page</string>
+			<key>SVG</key>
+			<string>externalized SVG source document</string>
+		</dict>
+	</array>
+	<key>Speed Layouts</key>
+	<array>
+		<dict>
+			<key>Galley</key>
+			<string>floating centred &quot;galley-strip&quot; - serial presentation of multiple segments</string>
+			<key>Two-up</key>
+			<string>centre-divided two equal width columns</string>
+			<key>Three-up</key>
+			<string>three equal width columns</string>
+			<key>Three-up wide centre</key>
+			<string>three column layout with a wide centre area for active article content, left-column navigation, right-column actions</string>
+			<key>Five-cell</key>
+			<string>page wide header &amp; footer, sandwiching a three-column wide centred layout</string>
+		</dict>
+	</array>
+</dict>
+</plist>
