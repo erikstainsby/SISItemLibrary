@@ -74,8 +74,8 @@
     if ([columnIdentifer isEqualToString: kSISItemName]) {
         returnValue = this.name;
     }
-    if ([columnIdentifer isEqualToString: kSISItemCategory]) {
-        returnValue = this.category;
+    if ([columnIdentifer isEqualToString: kSISItemCategories]) {
+        returnValue = this.categories;
     }
     if ([columnIdentifer isEqualToString: kSISItemUsage]) {
         returnValue = this.usage;
@@ -90,7 +90,6 @@
             returnValue = p.name;
             [p release];
         }
-        
     }
     if ([columnIdentifer isEqualToString: kSISItemChildren]) {
         returnValue = @"none";

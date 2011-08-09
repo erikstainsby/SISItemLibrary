@@ -43,8 +43,6 @@
     [myTable setDataSource: self];    
     NSLog( @"%@ [%04d] table dataSource set to self",[self class], __LINE__ );
     
-    
-    
     [myTable reloadData];
     NSLog( @"%@ [%04d] table data reloaded",[self class], __LINE__ );
     
@@ -52,8 +50,9 @@
 }
 
 #pragma mark NSTableViewDataSource protocol conformance
--(NSInteger) numberOfRowsInTableView:(NSTableView *)tableView {
-    NSInteger count=0;
+-(NSInteger) numberOfRowsInTableView:(NSTableView *)tableView 
+{
+    NSInteger count=0;  // guard against race condition which can see method called before array is populated
     if (self.content)
         count=[self.content count];
     return count;
@@ -75,8 +74,9 @@
     if ([columnIdentifer isEqualToString: kSISItemName]) {
         returnValue = this.name;
     }
-    if ([columnIdentifer isEqualToString: kSISItemCategory]) {
-        returnValue = this.category;
+    if ([columnIdentifer isEqualToString: kSISItemCategories]) 
+    {
+        returnValue = [this categoryList];
     }
     if ([columnIdentifer isEqualToString: kSISItemUsage]) {
         returnValue = this.usage;

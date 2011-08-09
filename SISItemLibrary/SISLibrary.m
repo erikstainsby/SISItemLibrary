@@ -9,6 +9,7 @@
 #import "SISLibrary.h"
 // #import "SISLibraryWindowController.h"
 #import "SISLibraryTVCellWindowController.h"
+#import "SISItemArrayController.h"
 #import "SISItem.h"
 
 @implementation SISLibrary
@@ -49,8 +50,9 @@
 
 -(void) populateMyModelArray
 {
-
-    
+    SISItemArrayController * arrCtlr = [[SISItemArrayController alloc] init];
+    NSLog( @"%@ [%04d] array controller has count: %lu",[self class],__LINE__, [[arrCtlr arrangedObjects] count]);
+    [myModel setArray: [arrCtlr arrangedObjects]];
 }
 
 /*
